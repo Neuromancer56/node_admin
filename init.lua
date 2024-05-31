@@ -6,7 +6,7 @@ minetest.register_privilege("node_admin", {
 
 minetest.register_tool("node_admin:dig_any_node_tool", {
     description = "Dig Any Node Tool",
-    inventory_image = "dig_any_node_tool.png",
+    inventory_image = "default_tool_stonepick.png^[colorize:black:200",
     on_use = function(itemstack, user, pointed_thing)
         if pointed_thing.type ~= "node" then
             return
@@ -35,7 +35,7 @@ minetest.register_tool("node_admin:dig_any_node_tool", {
 
 minetest.register_tool("node_admin:node_info_tool", {
     description = "Node Info Tool",
-    inventory_image = "node_info_tool.png",
+    inventory_image = "default_tool_stonesword.png^[colorize:black:200",
     on_use = function(itemstack, user, pointed_thing)
         if pointed_thing.type ~= "node" then
             return
